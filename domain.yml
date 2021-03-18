@@ -1,0 +1,99 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- salutations
+- humeur
+- allez
+- presentation_util
+- presentation
+- info_odc
+- info_oda
+- info_fab
+- info_ventures
+- info_fablab
+- info_odc_progr
+- remerciement
+- telo
+- my_name_is
+- mal
+- nomRobot
+- demandeService
+
+slots:
+  nom_personne:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+
+
+forms:
+  recuperation_du_form:
+    nom_personne:
+    - type: from_entity
+      entity: nom_personne
+      
+   
+responses:
+  utter_bjr:
+  - text: Bonjour! Bienvenue à l'O D C, je suis Tèlo votre assistant pour vous guider, et vous ?
+  utter_reso:
+  - text: Enchanté {nom_personne}, comment allez-vous ?
+  - text: 'Ravi de vous connaitre {nom_personne},comment allez-vous '
+  - text: 'Bienvenue {nom_personne},comment allez-vous '
+  utter_bien:
+  - text: Moi aussi je vais bien, comment puis-je vous aider ?
+  - text: Tant mieux, en quoi puis-je vous aider ?
+  utter_remerciement:
+  - text: Je vous en prie.
+  - text: A votre service.
+  - text: Tout le plaisir est pour moi.
+  - text: C'est tout naturel.
+  utter_mal:
+  - text: En quoi puis-je vous aider.
+  - text: je suis sincerement desole , je suis la si vous voulez paler.
+  utter_presentation_util:
+  - text: Merci
+  utter_telo:
+  - text: En quoi puis-je vous aider?
+  - text: Telo au rapport
+  - text: oui ?
+  - text: C'est moi.En quoi puis-je vous aider??
+  utter_byebye:
+  - text: ok, a la prochaine
+  - text: ok, aurevoir
+  - text: d'accord a bientot
+  - text: Au plaisir de vous reparler
+  utter_info_odc:
+  - text: Orange Digital Center (O D C) est un centre d'accompagnement et de développement des compétences numériques qui regroupe en sont sein 4 differents programmes Orange Digital Academy (O D A), Orange Fab, Orange Ventures et le FabLab Solidaire
+  utter_info_oda:
+  - text: L'Orange digital academy(O D A) est un  centre à vocation technologique qui propose des formations et des animations. Réalise des développements d'applications dans des environnements techniques professionnels, sur des systèmes évolués de dernière génération
+  utter_info_fab:
+  - text: Orange Fab est un  accélérateur de start-up qui accompagne les jeunes pousses et leur permet de développer des partenariats commerciaux nationaux et internationaux avec une ou plusieurs entités du Groupe.
+  utter_info_ventures:
+  - text: Orange Ventures, fonds d'investissement pour financer les start-up innovantes.
+  utter_info_fablab:
+  - text: En FabLab Solidaire, atelier de fabrication numérique qui permet de prototyper les projets et d'apprendre par le « Faire ».
+  utter_info_odc_progr:
+  - text: 'L orange Digital Center dispose de 4 prgramme a savoir: Orange Digital Academy,Orange Fab,Orange FabLab,Orange, Orange Ventures. '
+  utter_nomRobot:
+  - text: Je suis Tèlo, le guide de l'Orange Digital Center
+  - text: je ne suis que votre humble guide,telo
+  utter_demandeService:
+  - text: Oui, Suivez moi   svp !
+  utter_info:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_recuperation_du_form_nom_personne:
+  - text: votre nom svp?
+  utter_default:
+  - text: Désolé, je n'ai pas compris, pouvez-vous reformuler ?
+actions:
+- validate_recuperation_du_form
+

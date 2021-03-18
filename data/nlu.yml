@@ -1,0 +1,162 @@
+version: "2.0"
+nlu:
+- intent: salutations
+  examples: |
+    - salut
+    - hello
+    - bonjour
+    - bonjour je suis un visiteur
+    - bon jour
+    - bonzour
+    - bonjoul
+    - bonjou
+    - bjr
+    - slt
+    - xlt
+    - lu
+    - lup
+    - bonsoir
+    - bsr
+    - coucou
+    - salut on dit quoi?
+- intent: aurevoir
+  examples: |
+    - aurevoir
+    - au revoir
+    - abientot
+    - a bientot
+    - a la prochaine
+    - a plus
+    - tchao
+    - chao
+    - bye
+    - goodbye
+    - bye bye
+- intent: telo
+  examples: |
+    - telo
+    - mon beau telo
+    - télo
+    - mon telo
+- intent: mal_tres
+  examples: |
+    - mal
+    - je vais mal
+    - je vais pas bien
+    - ca va pas trop
+    - j'ai un probleme
+- intent: nomRobot
+  examples: |
+    - Quel est votre nom?
+    - puis-je avoir votre nom svp?
+    - puis-je avoir ton nom svp?
+    - Comment vous, vous appelez?
+    - Quel est ton nom?
+    - Tu te nomme comment?
+    - Qui êtes vous?
+    - Qui es tu?
+- intent: allez
+  examples: |
+    - bien
+    - je vais bien merci et vous
+    - tres bien
+    - a merveille
+- intent: remerciement
+  examples: |
+    - merci
+    - merci c'est gentil
+    - merci beaucoup
+    - c'est très gentil
+
+- intent: my_name_is
+  examples: |
+    - moi c'est[kabore]( nom_personne)
+    - moi c'est[Latifate]( nom_personne)
+    - je me nomme [Latifate]( nom_personne)
+    - mon nom est [kabore]( nom_personne)
+    - je m'appelle [Latifate]( nom_personne)
+    - je m'appel [kabore]( nom_personne)
+    - je repond au nom de [kabore]( nom_personne)
+    - je me présente [kabore]( nom_personne)
+    - je suis [kabore]( nom_personne)
+    - mon nom est [kabore]( nom_personne)
+    - [kabore]( nom_personne) est mon nom
+    - [Latifate]( nom_personne)est mon nom
+    - [Latifate]( nom_personne:Latifate) this side
+    - [Latifate]( nom_personne:Latifate)
+    - [ashish]( nom_personne:Latifate)
+
+- intent: info_odc
+  examples: |
+    - C'est quoi l'odc?
+    - odc
+    - Presentez moi de ODC?
+    - Presentez moi de odc?
+    - Parlez moi de l ODC?
+    - C'est quoi l'orange digital center?
+    - je veux avoir toutes les informations concernant l' orange digital center
+    - Comment fonctionne l'ODC?
+    - a quoi sert l'ODC?
+    - je veux savoir tout sur orange digital center odc svp!
+    - odyssée
+- intent: info_oda
+  examples: |
+    - C'est quoi l'oda?
+    - oda
+    - C'est quoi l'orange digital academy?
+    - Presentez moi de l'ODA?
+    - Parlez moi de l'oda?
+    - Quel est la fonction de l'oda?
+    - a quoi sert l'ODA?
+    - que fait-on a l'oda?
+- intent: info_fab
+  examples: |
+    - C'est quoi le fab?
+    - fab
+    - C'est quoi orange fab?
+    - Quel est la fonction du fab?
+    - a quoi sert le fab?
+    - Parlez moi du fab?
+    - Presentez moi le fab?
+    - que fait-on au fab?
+- intent: info_ventures
+  examples: |
+    - C'est quoi l'orange ventures?
+    - ventures
+    - C'est quoi le ventures?
+    - Quel est la fonction de orange ventures?
+    - Parlez moi de orange ventures?
+    - Presentez moi de orange ventures?
+    - a quoi sert l'orange ventures?
+    - que fait-on au ventures?
+- intent: info_fablab
+  examples: |
+    - C'est quoi le fablab?
+    - fablab
+    - Parlez moi du fablab?
+    - Presentez le fablab?
+    - C'est quoi orange fablab?
+    - Quel est la fonction du fablab?
+    - a quoi sert le fablab?
+    - que fait-on fablab?
+- intent: info_odc_progr
+  examples: |
+    - Quel sont les programmes de l'odc?
+    - De combien de programmes disposent l'O D C?
+    - Peux tu les activites qui se font a orange digital center ?
+    - les differentes de branches de l'odc?
+    - peux tu citer les differents programmes de l'O D C?
+- intent: demandeService
+  examples: |
+    - Pouvez vous me conduire à l'oda?
+    - Bonjour Tello, stp peux tu me conduire à l'oda?
+    - Stp peux tu m'aider à trouver l'oda?
+    - Pouvez vous me conduit à orange ventures?
+    - Bonjour Tello, stp peux tu me conduire à  orange ventures?
+    - Stp peux tu m'aider à trouver orange ventures?
+    - Peux tu me conduire à orange ventures?
+    - Peux tu me conduire à orange fab?
+    - Stp peux tu m'aider à trouver orange fab?
+    - Stp peux tu m'aider à trouver au fablab?
+    - Peux tu me conduire au fablab?
+    - Peux tu me conduire à la reception?

@@ -1,0 +1,106 @@
+version: "2.0"
+
+stories:
+- story: salutation avec reponses
+  steps:
+  - intent: salutations
+  - action: utter_bjr
+  - action: recuperation_du_form
+  - active_loop: recuperation_du_form  
+  - active_loop: null
+  - action: utter_reso 
+  - intent: allez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  - action: utter_bien
+  - action: action_restart
+ 
+
+
+- story: cava
+  steps:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+  - intent: presentation_util
+  - action: utter_reso
+
+ 
+- story: remercier
+  steps:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+  - intent: remerciement
+  - action: utter_remerciement
+
+# - story: bureau
+#   steps:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+#   - intent: int_bureau
+#   - action: utter_int_bureau
+
+# - story: bien
+#   steps:
+  
+
+
+
+- story: cavapas
+  steps:
+  - intent: mal_tres                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+  - action: utter_mal
+
+- story: telo
+  steps:
+  - intent: telo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+  - action: utter_telo
+
+  # situation geographique
+
+- story: odc
+  steps:
+  - intent: info_odc
+  - action: utter_info_odc
+
+- story: oda
+  steps:
+  - intent: info_oda
+  - action: utter_info_oda
+
+- story: fab
+  steps:
+  - intent: info_fab
+  - action: utter_info_fab
+
+- story: ventures
+  steps:
+  - intent: info_ventures
+  - action: utter_info_ventures
+
+- story: fablab
+  steps:
+  - intent: info_fablab
+  - action: utter_info_fablab
+
+- story: prog
+  steps:
+  - intent: info_odc_progr
+  - action: utter_info_odc_progr
+
+
+# - story: SiteOda
+#   steps:
+#   - intent: site_oda
+#   - action: utter_site_oda
+
+# - story: SiteVenture
+#   steps:
+#   - intent: site_ventures
+#   - action: utter_site_ventures
+
+# - story: SiteFablab
+#   steps:
+#   - intent: site_fablab
+#   - action: utter_site_fablab
+
+- story: name
+  steps:
+  - intent: nomRobot
+  - action: utter_nomRobot
+
+- story: Service
+  steps:
+  - intent: demandeService
+  - action: utter_demandeService
